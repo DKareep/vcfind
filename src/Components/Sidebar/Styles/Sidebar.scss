@@ -1,9 +1,11 @@
 .side-bar {
+  margin: 2rem 0;
   height: 100%;
-  border-right: 1px solid #282c34;
 
   .sidebar-list-container {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     a {
       text-decoration: none;
       li {

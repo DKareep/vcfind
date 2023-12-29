@@ -7,6 +7,9 @@
   .feature-content {
     margin: 0 auto;
     width: 80%;
+    .link-hook {
+      all: unset;
+    }
     .featured {
       list-style-type: none;
 

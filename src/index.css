@@ -47,8 +47,10 @@ code {
   background-color: #282c34;
   color: white;
   font-weight: 500;
-  display: inline-flex;
+
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     border: 1px solid lightblue;

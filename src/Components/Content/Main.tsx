@@ -13,9 +13,13 @@ const Main = () => {
   return (
     <main className={"main-content"}>
       <section className={"feature-content  flex-column"}>
-        <Link to={"/dashboard"}>
-          <button className="btn">Access all</button>
-        </Link>
+        <button className="btn">
+          {" "}
+          <Link className={"link-hook"} to={"/dashboard"}>
+            Access all{" "}
+          </Link>
+        </button>
+
         <ul className={"featured"}>
           <li className={"item"}>
             <div className="avatar-container">
