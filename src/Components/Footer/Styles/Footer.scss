@@ -1,0 +1,26 @@
+footer {
+  height: 200px;
+  background-color: #282c34;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  padding-bottom: 2rem;
+  .footer-text {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .contact-us {
+    margin: 0 auto;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  p {
+    padding-top: 2rem;
+    .heart-icon {
+      color: red;
+    }
+  }
+}

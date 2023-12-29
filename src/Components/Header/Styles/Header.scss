@@ -1,0 +1,39 @@
+.landing-header {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+    90deg,
+    #fff0c7,
+    #e5d4ff 38%,
+    #c1e7bf 73%,
+    #ffd7dd
+  );
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    button {
+      margin: 10px;
+    }
+  }
+  div.transparent {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    height: 250px;
+    background-image: linear-gradient(transparent, #fff);
+  }
+  .header-logo {
+    margin: 20px;
+    width: 140px;
+    //height: 120px;
+  }
+  .raise-funding-text {
+    z-index: 1;
+    font-size: 4rem;
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+  }
+}

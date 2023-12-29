@@ -1,0 +1,5 @@
+.dashboard-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  height: calc(100vh - 51px);
+}
