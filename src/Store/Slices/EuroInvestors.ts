@@ -1,12 +1,22 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
+import { LIMIT } from "../../Constants/Constants";
+const fetchEuroInvestors = createAsyncThunk(
+  "euro/fetch",
+  async (page: number) => {
+    try {
+      const response = await axios.get(
+        `https://vcfinder-dkareeps-projects.vercel.app/euro?_page=${page}&_limit=${LIMIT}`,
+      );
 
-const fetchEuroInvestors = createAsyncThunk("euro/fetch", async () => {
-  const response = await axios.get(
-    "https://vcfinder-dkareeps-projects.vercel.app/euro?_page=7&_limit=20",
-  );
-  return response.data;
-});
+      return {
+        data: response.data,
+      };
+    } catch (e) {
+      console.log(e);
+    }
+  },
+);
 
 const initialState = {
   data_euro: [],
@@ -28,9 +38,19 @@ const EuroInvestors = createSlice({
     builder.addCase(
       fetchEuroInvestors.fulfilled,
       (state: InitialState, action: any) => {
-        state.data_euro = action.payload;
+        state.data_euro = action.payload.data;
+        state.loading_euro = false;
+        state.error_euro = false;
       },
     );
+    builder.addCase(fetchEuroInvestors.pending, (state, action) => {
+      state.loading_euro = true;
+      state.error_euro = false;
+    });
+    builder.addCase(fetchEuroInvestors.rejected, (state, action) => {
+      state.error_euro = true;
+      state.loading_euro = false;
+    });
   },
 });
 

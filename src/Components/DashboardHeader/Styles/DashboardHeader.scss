@@ -2,7 +2,7 @@
   height: 50px;
   display: flex;
   justify-content: flex-start;
-  border-bottom: 1px solid #282c34;
+  border-bottom: 1px solid var(--ds-border, #ebecf0);
   .header-logo-dashboard {
     //margin: 20px;
     width: 140px;
