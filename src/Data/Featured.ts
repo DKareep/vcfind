@@ -61,7 +61,7 @@ const Featured = [
       "Software,Healthcare,Big Data & Analytics,Enterprise,Sales Automation,Food and Beverage,Elder Care,Health & Wellness,B2B,Advertising (AdTech),Marketing (MarTech)",
     Fundstage: "Seed,Pre-Seed,Series A",
     Fundtype: "Venture Fund",
-    LinkedInLink: "https://www.linkedin.com/company-beta/10443439/",
+    LinkedInLink: "https://www.linkedin.com/company/green-egg-ventures/",
     Location: "New York",
     NumberofExits: 5,
     NumberofInvestments: 41,
